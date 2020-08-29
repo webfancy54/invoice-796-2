@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 796px;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.wrapper .header h1{
+    font-size: 40px;
+    padding: 10px;
+    background: #afcd9d;
+    
+}
+span{
+    display: block;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+p{
+
+}
+.contact,.info{
+    padding-top: 25px;
+    display: flex;
+}
+.contact .width-5,.info .width-5{
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+.contact .width-5.mr,.info .width-5.mr{
+    margin-right: 2%;
+}
+.contact .width-5 h2{
+    padding: 50px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: 500;
+}
+.pn{
+    padding: 30px;
+}
+.padding-w{
+    box-sizing: border-box;
+    padding: 0px;
+}
+.padding-w h4{
+    padding: 31px;
+    background: red;
+    background: #abe18b;
+}
+.padding-w p{
+    padding: 15px;
+    background: #ddd;
+}
+.total-cost,.tax{
+    position: relative;
+}
+
+.total-cost .ttl-p{
+    position: absolute;
+    right: 93px;
+}
+
+
+    
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05)
+}
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6
+}
+thead{
+    background: #abe18b;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6
+}
+
+.table .table {
+    background-color: #fff
+}
+
+
+.table-bordered {
+    border: 1px solid #dee2e6
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #dee2e6
+}
+
+.table-bordered thead td,
+.table-bordered thead th {
+    border-bottom-width: 2px
+}
+.tax{
+    position: relative;
+    top: 30px;
+}
+.tax span{
+    position: absolute;
+    right: 93px;
+}
+.unit{
+    position: relative;
+    top: 50px;
+}
+.unit .qt,.unit .amnt{
+    position: absolute;
+    display: inline-block;
+}
+.unit .qt{
+    right: 360px;
+}
+.unit .amnt{
+    right: 93px;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header text-center">
+            <h1 style="text-transform: uppercase">invoice</h1>
+        </div>
+        <div class="contact">
+            <div class="width-5 mr">
+                <div style="width: 80%">
+                    <h2 class="text-center" style="text-transform: uppercase">your logo hear</h2>
+                </div>
+            </div>
+            <div class="width-5 padding-w">
+                <div style="width: 80%; float:right">
+                    <h4 class="text-center">Invoice#</h4>
+                    <p class="text-center">Date</p>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="width-5 padding-w mr">
+                <div style="width: 80%; padding-left: 5px;">
+                    <span><em>From:</em></span>
+                    <span>Your Name</span>
+                    <span>Address</span>
+                    <span>Email Address</span>
+                    <span>Phone Number</span>
+                </div>
+            </div><div class="width-5 padding-w">
+                <div style="width: 80%; float: right; padding-left: 5px">
+                    <span><em>To:</em></span>
+                    <span>Recivers Name</span>
+                    <span>Address</span>
+                    <span>Email Address</span>
+                    <span>Phone Number</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-info" style="padding-top: 25px;padding-bottom: 70px;">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>items name</th>
+                        <th>unit cost</th>
+                        <th>qt</th>
+                        <th>discount</th>
+                        <th>amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Your items name</td>
+                        <td>0.00 ৳</td>
+                        <td>1</td>
+                        <td>0%</td>
+                        <td>0.00 ৳</td>
+                    </tr>
+                    <tr>
+                        <td>Your items name</td>
+                        <td>0.00 ৳</td>
+                        <td>1</td>
+                        <td>0%</td>
+                        <td>0.00 ৳</td>
+                    </tr>
+                    <tr>
+                        <td>Your items name</td>
+                        <td>0.00 ৳</td>
+                        <td>1</td>
+                        <td>0%</td>
+                        <td>0.00 ৳</td>
+                    </tr>
+                    <tr>
+                        <td>Your items name</td>
+                        <td>0.00 ৳</td>
+                        <td>1</td>
+                        <td>0%</td>
+                        <td>0.00 ৳</td>
+                    </tr>
+                    <tr>
+                        <td>Your items name</td>
+                        <td>0.00 ৳</td>
+                        <td>1</td>
+                        <td>0%</td>
+                        <td>0.00 ৳</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="no-cls">
+            <div class="total-cost">
+                <p class="ttl-p">0.00 ৳</p>
+                <p class="tax">Tax Rate <span style="display: inline-block;">0%</span></p>
+                <p class="unit">Total Unit <span class="qt">0</span> <span class="amnt">0 ৳</span></p>
+            </div>
+            </div>
+            
+        </div>
+        <div style="border: 1px solid #ddd;">
+            <p style="padding: 5px;background: #afcd9d; width: 99%;">Payment Instraction</p>
+            <span style="padding: 5px;">...</span>
+        </div>
+            <div class="sig" style="margin-top: 10px;">
+                <p>Signeture</p>
+            </div>
+            <div class="footer text-center pn">
+                <p>Your Company Name And Address</p>
+            </div>
+    </div>
+</body>
+
+</html>
+
